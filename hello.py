@@ -1,4 +1,8 @@
 import pygame as pg
+import sys
+
+d
+
 
 pg.init()
 pantalla =pg.display.set_mode((600, 400))
@@ -10,8 +14,11 @@ while not game_over:
     #gestion de eventos
     #lista_eventos = pg.event.get()
     for evento in pg.event.get():
-        pass
-
+        if evento.type== pg.QUIT:
+             game_over = True
+    
+    
+    
     print("Hola mundo")
 
 
@@ -21,4 +28,5 @@ while not game_over:
 
 
 
-
+pg.quit()
+sys.exit()
